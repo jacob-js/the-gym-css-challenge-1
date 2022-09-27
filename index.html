@@ -26,9 +26,9 @@
         </div>
     </header>
     <section class="">
-        <div class="mt-3 flex flex-col p-3">
-            <img src="https://www.fu-berlin.de/_startseite-neu-rd/01-slideshow/_bilder/deutschlandstipendium.jpg?width=2000" alt="" class="w-full h-[128px]">
-            <div class="bg-[rgba(0,0,0,.45)] text-white p-4">
+        <div class="mt-3 flex flex-col p-3 relative">
+            <img src="https://www.fu-berlin.de/_startseite-neu-rd/01-slideshow/_bilder/deutschlandstipendium.jpg?width=2000" alt="" class="w-full h-[128px] sm:min-h-[293px]">
+            <div class="bg-[rgba(0,0,0,.45)] text-white p-4 sm:absolute sm:bg-[rgba(0,0,0,.2)] sm:bottom-2">
                 <div class="text-lg">Scholarships available – apply now!</div>
                 <p class="text-gray-100">
                     Students at Freie Universität with a strong academic record are invited to apply for a Deutschlandstipendium scholarship. Applying is easy – do it in just four steps!
@@ -48,7 +48,7 @@
             <div class="w-[100px] h-8 bg-blue-600"></div>
             <div class="text-xl ml-3">University News</div>
         </div>
-        <div class="flex flex-col p-3 gap-5">
+        <div class="flex flex-col p-3 gap-5 sm:grid sm:grid-cols-3">
             <div class="flex flex-col bg-gray-200">
                 <img src="https://www.fu-berlin.de/campus-aktuell/_fotos-grafiken/noth-juliane.jpg?width=2000" alt="" class="">
                 <div class="p-3">
@@ -125,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col bg-gray-200">
+            <div class="grow flex flex-col bg-gray-200">
                 <img src="https://www.fu-berlin.de/campus-aktuell/_fotos-grafiken/pexels-pixabay-86722.jpg?width=1300" alt="" class="">
                 <div class="p-3">
                     <div class="flex text-blue-600">
@@ -157,7 +157,7 @@
 
     <section class="py-10">
         <div class="text-xl px-3 mb-6">Studying at Freie Universität</div>
-        <div class="px-3">
+        <div class="px-3 sm:grid sm:grid-cols-2 gap-3">
             <div class="flex flex-col">
                 <img src="https://www.fu-berlin.de/en/_startseite-neu-rd/08-studium-teaserliste/_bilder/ssc-2015-2_930.jpg?width=3000" alt="">
                 <div class="mt-4 space-y-3">
@@ -187,9 +187,33 @@
                     </div>
                 </div>
             </div>
+
+            <div class="hidden sm:flex flex-col">
+                <img src="https://www.fu-berlin.de/en/_startseite-neu-rd/08-studium-teaserliste/_bilder/globus.jpg?width=3000" alt="">
+                <div class="mt-4 space-y-3">
+                    <div class="text-lg">Student Exchange</div>
+                    <p class="text-sm">
+                        What do I have to consider if I am currently taking part in an exchange program or doing an internship? The most important questions and answers for students from Freie Universität and exchange students.
+                    </p>
+                    <div class="space-y-1">
+                        <div class="flex gap-3 items-center">
+                            <div class="">
+                                <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
+                            </div>
+                            <div class="text-sm text-gray-500 cursor-pointer hover:underline">Students from Freie Universität</div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="">
+                                <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
+                            </div>
+                            <div class="text-sm text-gray-500 cursor-pointer hover:underline">Exchange students</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="mt-6 py-8 px-3 bg-gray-200">
+        <div class="mt-6 py-8 px-3 bg-gray-200 sm:grid grid-cols-2 gap-3">
             <div class="flex flex-col">
                 <img src="https://www.fu-berlin.de/_startseite-neu-rd/04-besonderes/foto-dhc.jpg?width=3000" alt="">
                 <div class="mt-4 space-y-3">
@@ -221,6 +245,24 @@
                                 <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
                             </div>
                             <div class="text-sm text-gray-500 cursor-pointer hover:underline">Contestations of the Liberal Script (SCRIPTS)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex flex-col">
+                <img src="https://www.fu-berlin.de/_archiv/04-70jahre-exini-verbund/berlin-verbund.png?width=3000" alt="">
+                <div class="mt-4 space-y-3">
+                    <div class="text-lg">Berlin University Alliance</div>
+                    <p class="text-sm">
+                        The three major Berlin universities and Charité – Universitätsmedizin Berlin are creating an integrated research environment and are a driving force in further developing Berlin as a research hub.
+                    </p>
+                    <div class="space-y-1">
+                        <div class="flex gap-3 items-center">
+                            <div class="">
+                                <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
+                            </div>
+                            <div class="text-sm text-gray-500 cursor-pointer hover:underline">www.berlin-university-alliance.de</div>
                         </div>
                     </div>
                 </div>
@@ -285,7 +327,7 @@
     </section>
     <section class="bg-gray-200 py-10">
         <div class="text-xl px-3 mb-6">What Distinguishes Us</div>
-        <div class="px-3">
+        <div class="px-3 sm:grid grid-cols-2 gap-3">
             <div class="flex flex-col">
                 <img src="https://www.fu-berlin.de/presse/publikationen/tsp/2017/tsp-april-2017/alte-raetsel-im-visier-moderner-technik/seite-1-photo-Louvre-box.jpg?width=3000" alt="">
                 <div class="mt-4 space-y-3">
@@ -311,6 +353,36 @@
                                 <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
                             </div>
                             <div class="text-sm text-gray-500 cursor-pointer hover:underline">Focus Areas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex flex-col">
+                <img src="https://www.fu-berlin.de/_startseite-neu-rd/06-was-uns-auszeichnet/_bilder/international_.jpg?width=3000" alt="">
+                <div class="mt-4 space-y-3">
+                    <div class="text-lg">International</div>
+                    <p class="text-sm">
+                        An international outlook has defined the research activities and academic life at Freie Universität Berlin ever since the university was founded.
+                    </p>
+                    <div class="space-y-1">
+                        <div class="flex gap-3 items-center">
+                            <div class="">
+                                <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
+                            </div>
+                            <div class="text-sm text-gray-500 cursor-pointer hover:underline">Liaison Offices</div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="">
+                                <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
+                            </div>
+                            <div class="text-sm text-gray-500 cursor-pointer hover:underline">Strategic Partners</div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <div class="">
+                                <i class="fa-solid fa-chevron-right text-sm font-bold text-blue-600"></i>
+                            </div>
+                            <div class="text-sm text-gray-500 cursor-pointer hover:underline">International in Education and Research</div>
                         </div>
                     </div>
                 </div>
